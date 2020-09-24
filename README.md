@@ -16,3 +16,9 @@ _____
 - Jonathan Alberto López Gómez 202031586
 - Denilson Elian Ramírez Morales 201931905
 - Pablo André Sánchez Juárez 202032025  
+
+_____
+
+### Para ver el proyecto puedes ir al siguiente link:
+
+https://d3rm0.github.io/soft-tienda/
