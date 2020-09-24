@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Software para tienda</title>
+</head>
+
+<body>
+
+    <div class="caja-madre">
+        <div class="caja-separadora">
+            <p></p>
+        </div>
+
+        <div class="caja-principal">
+            <h2>Caja Registradora</h2>
+
+            <div class="datos">
+                <span>Ingrese el nombre del producto</span>
+                <input id="nomb" class="datos-caja" type="text" required>
+                <span>Ingrese la cantidad del producto</span>
+                <input id="cant" class="datos-caja" type="text" required>
+                <span>Ingrese el precio del producto</span>
+                <input id="precio" class="datos-caja" type="text" required>
+
+                <button id="btn_guardar" onclick="guardar(), limpiar()">Agregar</button><br><br>
+            </div>
+
+            <div class="contenedor-tabla">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Categoria</th>
+                            <th>Precio</th>
+                            <th>Subtotal</th>
+                            <th>Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablita">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="resultados">
+                <button onclick="limpiar3()">Borrar Todo</button>
+            </div>
+        </div>
+
+        <div class="caja-separadora2">
+            <h2>Suma de subtotales</h2>
+            <div class="ganancias">
+                <span>Año:</span>
+                <select name="seleccion" id="seleccion">
+                    <option>2020
+                    <option>2019
+                    <option>2018
+                    <option>2017
+                </select>
+                <span>Ingrese lo recaudado:</span>
+                <input type="text" id="recaudado">
+                <button id="guardar-recaudado">Guardar</button>
+            </div>
+            <table id="tabla-ganancias">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Beneficio</th>
+                        <th>Recaudado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-g-b">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

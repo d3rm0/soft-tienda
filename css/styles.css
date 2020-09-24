@@ -1,0 +1,138 @@
+body {
+  background-color: #808080;
+}
+
+hr {
+  color: #12b1fa;
+  border: 0px;
+}
+
+textarea {
+  resize: none;
+  width: 150px;
+  height: 16px;
+}
+
+.caja-madre {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+.caja-principal {
+  text-align: center;
+  background-color: #12b1fa;
+  width: 500px;
+  height: auto;
+}
+
+.datos {
+  text-align: start;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.datos > button {
+  grid-column: 2/3;
+}
+
+.datos > span {
+  width: auto;
+  grid-column: 1/3;
+}
+
+.datos-caja{
+  width: auto;
+  text-align: center;
+}
+
+.datos-modificador {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.datos-modificador > span {
+  grid-column: 1/3;
+  text-align: end;
+}
+
+.datos-modificador > button {
+  width: 50px;
+}
+
+.contenedor-tabla {
+  padding: 1em;
+}
+
+.tabla {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: #1713ff;
+  color: white;
+  margin: 0 auto;
+}
+
+th {
+  background-color: #12b1fa;
+  border: 1px solid black;
+  padding: 0.3em;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0.3em;
+}
+
+.resultados{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 1em;
+  text-align: end;
+}
+
+.resultados > input {
+  width: auto;
+}
+
+.resultados > button {
+  grid-column: 4/5;
+  width: 100px;
+}
+
+#total {
+  width: 10em;
+  height: 1em;
+}
+
+.caja-separadora {
+  background-color: #808080;  
+}
+
+.caja-separadora2 {
+  background-color: #12b1fa;
+  width: 500px;
+  height: auto;
+  text-align: center;
+}
+
+.ganancias {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-bottom: 1em;
+  gap: 1em;
+}
+
+.ganancias > span {
+  grid-column: 1/3;
+}
+
+#tabla-ganancias {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+  color: white;
+}
